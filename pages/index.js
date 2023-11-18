@@ -10,9 +10,12 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Numerous skilled and experienced workers, possessing in-demand expertise, find themselves excluded from well-paying positions due to the absence of a bachelor's degree. Companies, eager to establish a consistent stream of proficient workers, face challenges in overcoming this barrier. </p>
-        <Button type="primary">clickhere</Button>
+        <p>Numerous skilled and experienced workers, possessing in-demand expertise, find themselves excluded from well-paying positions 
+          due to the absence of a bachelor's degree.Companies, eager to establish a consistent stream of proficient workers, 
+          face challenges in overcoming this barrier. </p>
+        <Button type="primary">Find Your Career</Button>
       </section>
     </Layout>
   );
 }
+

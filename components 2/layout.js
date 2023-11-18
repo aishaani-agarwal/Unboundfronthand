@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Unbound';
-export const siteTitle = 'Unbound - Limitless careers';
+const name = '[Your Name]';
+export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home }) {
   return (
@@ -46,7 +46,7 @@ export default function Layout({ children, home }) {
                 src="/images/logo copy.jpg"
                 //className={utilStyles.borderCircle}
                 height={150}
-                width={200}
+                width={350}
                 alt={name}
               />
             </Link>

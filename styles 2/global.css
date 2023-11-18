@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: #df00f3;
+  color: #00f3aa;
   text-decoration: none;
 }
 
@@ -34,8 +34,4 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
-}
-
-button{
-  color: crimson;
 }
