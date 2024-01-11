@@ -28,11 +28,13 @@ export default function NewPage() {
   const [Location, setlocation] = useState([]);
   const [data, setData] = useState([]);
 
+  const baseurl ="https://unbound-5xnh.onrender.com";
+
   console.log(textBoxValues.Fname);
   useEffect(() => {
     // Replace 'http://localhost:5000' with your actual backend server URL
     axios
-      .get("http://localhost:8080/api/example")
+      .get(baseurl + "/api/example")
       .then((response) => {
         setData(response.data);
         console.log(response.data);
@@ -164,7 +166,7 @@ export default function NewPage() {
                   console.log(textBoxValues.Location);
 
 
-                  await axios.post("http://localhost:8080/api/example/add", {
+                  await axios.post(baseurl + "/api/example/add", {
                     // Fname:"Aishaani",
                     // Email:"aishaani@gmail.com",
                     // Age:"3/1/2024",
