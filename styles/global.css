@@ -23,7 +23,7 @@ body {
 }
 
 a {
-  color: #df00f3;
+  color: #115e59;
   text-decoration: none;
 }
 
@@ -31,11 +31,3 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-button{
-  color: crimson;
-}

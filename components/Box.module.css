@@ -1,0 +1,12 @@
+/* styles/Box.module.css */
+.box {
+
+    border: 3px solid #ffff; /* Border color and thickness */
+    border-radius: 40px; /* Border radius for rounded corners */
+    padding: 40px;
+    margin: 20px;
+    /* background-color: #6464d4; */
+    /* (Background color) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    color: rgb(238, 99, 82); /* Text color */
+}

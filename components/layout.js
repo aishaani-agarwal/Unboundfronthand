@@ -1,11 +1,11 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = 'Unbound';
-export const siteTitle = 'Unbound - Limitless careers';
+const name = " ";
+export const siteTitle = "Unbound - Limitless careers";
 
 export default function Layout({ children, home }) {
   return (
@@ -19,7 +19,7 @@ export default function Layout({ children, home }) {
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
+            siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
         <meta name="og:title" content={siteTitle} />
@@ -30,11 +30,11 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/logo copy.jpg"
+              src="/images/unbound logo.jpg"
               //className={utilStyles.borderCircle}
-              height={150}
-              width={350}
-              alt={name}
+              height={300}
+              width={600}
+              // alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -42,26 +42,31 @@ export default function Layout({ children, home }) {
           <>
             <Link href="/">
               <Image
+                className="absolute inset-y-2 left-0 w-16..."
                 priority
-                src="/images/logo copy.jpg"
+                src="/images/unbound logo.jpg"
                 //className={utilStyles.borderCircle}
-                height={150}
-                width={200}
-                alt={name}
+                height={300}
+                width={300}
+                // alt={name}
               />
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit }>
+            {/* <h2 className={utilStyles.headingLg}>
+              <Link href="/" className={utilStyles.colorInherit}>
                 {name}
               </Link>
-            </h2>
+            </h2> */}
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          {/* <Link href="/">
+            <button className="absolute inset-y-0 right-0 w-16 ...">
+               
+            </button>
+          </Link> */}
         </div>
       )}
     </div>
