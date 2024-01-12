@@ -145,9 +145,10 @@ export default function NewPage() {
         <div>
           <a href={"/Question1"}>
             <button
-              className="text-yellow-200 absolute inset-x-0 bottom-30 h-16 ... text-3xl ..."
+  className="text-yellow-200 absolute inset-x-0 bottom-30 h-16 ... text-3xl ..."
               disabled={!isFormValid()}
               onClick={async () => {
+                
                 setEmail(textBoxValues.Email);
                 console.log(textBoxValues.Fname);
                 setFname(textBoxValues.Fname);

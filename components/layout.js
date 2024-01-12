@@ -32,8 +32,8 @@ export default function Layout({ children, home }) {
               priority
               src="/images/unbound logo.jpg"
               //className={utilStyles.borderCircle}
-              height={300}
-              width={600}
+              height={320}
+              width={800}
               // alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
@@ -41,15 +41,14 @@ export default function Layout({ children, home }) {
         ) : (
           <>
             <Link href="/">
-              <Image
-                className="absolute inset-y-2 left-0 w-16..."
-                priority
-                src="/images/unbound logo.jpg"
-                //className={utilStyles.borderCircle}
-                height={300}
-                width={300}
-                // alt={name}
-              />
+            <div className="fixed top-0 left-0 z-50 p-4">
+                <Image
+                  priority
+                  src="/images/unbound logo.jpg"
+                  height={120}
+                  width={320}
+                />
+              </div>
             </Link>
             {/* <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>
