@@ -46,17 +46,17 @@ export default function EducationAdministrationU() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="grid grid-cols-1">
-        <h1 className="text-yellow-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... " >
+        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... " >
           Question 4
         </h1>
-        {/* <p className="text-yellow-200">
+        {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
         <h1 class= "text-rose-300 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... "	>
            Which from these do you prefer?</h1>
         <Dropdown options={EducationAdministrationUOptions} onChange={handleDropdownChange} />
-        <button className="text-yellow-200 text-3xl ... inset-x-0 bottom-10 h-16 ..." onClick={handleSubmit}>NEXT</button>
+        <button className="text-lime-200 text-3xl ... inset-x-0 bottom-10 h-16 ..." onClick={handleSubmit}>NEXT</button>
 
         {/* <p>Selected option: {dropdownValue}</p> */}
 
@@ -64,7 +64,7 @@ export default function EducationAdministrationU() {
 
         {/* <div>
           <a href={"/third"}>
-            <button className="text-yellow-200 absolute inset-x-0 bottom--30 h-16 ... text-3xl ..." >
+            <button className="text-lime-200 absolute inset-x-0 bottom--30 h-16 ... text-3xl ..." >
               Submit
             </button>
           </a>{" "}

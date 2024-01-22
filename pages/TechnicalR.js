@@ -50,10 +50,10 @@ export default function TechnicalR() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="grid grid-cols-1">
-        <h1 className="text-yellow-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
+        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
           Question 4
         </h1>
-        {/* <p className="text-yellow-200">
+        {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
@@ -62,7 +62,7 @@ export default function TechnicalR() {
         </h1>
         <Dropdown options={TechnicalROptions} onChange={handleDropdownChange} />
         <button
-          className="text-yellow-200 text-3xl ... inset-x-0 bottom-10 h-16 ..."
+          className="text-lime-200ext-3xl ... inset-x-0 bottom-10 h-16 ..."
           onClick={handleSubmit}
         >
           NEXT
@@ -74,7 +74,7 @@ export default function TechnicalR() {
 
         {/* <div>
           <a href={"/third"}>
-            <button className="text-yellow-20000 absolute inset-x-0 bottom--30 h-16 ... text-3xl ..." >
+            <button className="text-lime-20000 absolute inset-x-0 bottom--30 h-16 ... text-3xl ..." >
               Submit
             </button>
           </a>{" "}

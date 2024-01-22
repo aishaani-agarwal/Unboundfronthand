@@ -51,19 +51,19 @@ export default function Question1() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="grid grid-cols-1">
-        <h1 className="text-yellow-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ...  ">
+        <h1 className="text-cyan-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ...  ">
           Question 1
         </h1>
-        {/* <p className="text-yellow-200">
+        {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
-        <h1 class="text-rose-300 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
+        <h1 class="text-lime-200 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
           Do you have any mobility challenges?
         </h1>
         <Dropdown options={Question1Options} onChange={handleDropdownChange} />
         <button
-          className="text-yellow-200 text-3xl ... inset-x-0 bottom-10 h-16 ..."
+          className="text-white-200 text-3xl ... inset-x-0 bottom-10 h-16 ..."
           onClick={handleSubmit}
         >
           NEXT
@@ -75,7 +75,7 @@ export default function Question1() {
 
         {/* <div>
           <a href={"/third"}>
-            <button className="text-yellow-200 absolute inset-x-0 bottom--30 h-16 ... text-4xl ..." >
+            <button className="text-lime-200 absolute inset-x-0 bottom--30 h-16 ... text-4xl ..." >
               Submit
             </button>
           </a>{" "}

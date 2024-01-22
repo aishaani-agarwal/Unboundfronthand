@@ -47,10 +47,10 @@ export default function ServiceU() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="grid grid-cols-1">
-        <h1 className="text-yellow-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
+        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
           Question 4
         </h1>
-        {/* <p className="text-yellow-200">
+        {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
@@ -59,7 +59,7 @@ export default function ServiceU() {
         </h1>
         <Dropdown options={ServiceUOptions} onChange={handleDropdownChange} />
         <button
-          className="text-yellow-200 text-3xl ... font-serif  place-self-auto ..."
+          className="text-lime-200 text-3xl ... font-serif  place-self-auto ..."
           onClick={handleSubmit}
         >
           NEXT
@@ -71,7 +71,7 @@ export default function ServiceU() {
 
         {/* <div>
           <a href={"/third"}>
-            <button className="text-yellow-200 absolute inset-x-0 bottom--30 h-16 ... text-3xl ..." >
+            <button className="text-lime-200 absolute inset-x-0 bottom--30 h-16 ... text-3xl ..." >
               Submit
             </button>
           </a>{" "}

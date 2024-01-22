@@ -51,7 +51,7 @@ export default function NewPage() {
 
     const regexMap = {
       Fname: /^[A-Za-z]+$/, // Only letters for first name
-      Email: /^[A-Za-z]+$/, // Only letters for last name
+      Email: /.*/, // Any characters for email
       Age: /^\d{1,2}$/, // Only numbers for age
       Location: /^[A-Za-z0-9\s]+$/, // Only letters and spaces for location
       Phone: /^\d{0,10}$/, // Only numbers for phone number
@@ -93,10 +93,10 @@ export default function NewPage() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="grid grid-cols-1">
-        <h1 className="text-yellow-200 text-4xl ... font-serif ...absolute bottom-3 right-5 w-16 ...">
+        <h1 className="text-lime-200 text-4xl ... font-serif ...absolute bottom-3 right-5 w-16 ...">
           Identity
         </h1>
-        {/* <p className="text-yellow-200">
+        {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
@@ -145,7 +145,7 @@ export default function NewPage() {
         <div>
           <a href={"/Question1"}>
             <button
-  className="text-yellow-200 absolute inset-x-0 bottom-30 h-16 ... text-3xl ..."
+  className="text-lime-200 absolute inset-x-0 bottom-30 h-16 ... text-3xl ..."
               disabled={!isFormValid()}
               onClick={async () => {
                 

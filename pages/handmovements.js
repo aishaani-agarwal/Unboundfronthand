@@ -53,10 +53,10 @@ export default function handmovements() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="grid grid-cols-1">
-        <h1 className="text-yellow-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
+        <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
           Question 3
         </h1>
-        {/* <p className="text-yellow-200">
+        {/* <p className="text-lime-200">
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
@@ -65,7 +65,7 @@ export default function handmovements() {
         </h1>
         <Dropdown options={handmovementsOptions} onChange={handleDropdownChange} />
         <button
-          className="text-yellow-200 text-3xl ... inset-x-0 font-serif bottom-10 h-16 ..."
+          className="text-lime-200 text-3xl ... inset-x-0 font-serif bottom-10 h-16 ..."
           onClick={handleSubmit}
         >
           NEXT
@@ -77,7 +77,7 @@ export default function handmovements() {
 
         {/* <div>
           <a href={"/third"}>
-            <button className="text-yellow-200 absolute inset-x-0 bottom--30 h-16 ... text-4xl ..." >
+            <button className="text-lime-200 absolute inset-x-0 bottom--30 h-16 ... text-4xl ..." >
               Submit
             </button>
           </a>{" "}

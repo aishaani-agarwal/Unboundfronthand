@@ -24,7 +24,7 @@ export default function OperationsLaborRolesU() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
       <section className="grid grid-cols-1">
-        <h1 className="text-yellow-200 text-4xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
+        <h1 className="text-lime-200 text-4xl ... font-serif ...absolute bottom-0 right-3 w-30 ...">
           Resources & Reccomendations
         </h1>
         {/* 6 */}

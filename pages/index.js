@@ -1,46 +1,72 @@
+// pages/index.js
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import DarkModeToggle from "../components/DarkModeToggle";
-import { useState } from "react"; // Import useState
+import { useState } from "react";
 import { useEffect } from "react";
+import Image from "next/image";
+// import styles from "./index.module.css";
 
 export default function Home() {
-  // const [isDarkMode, setIsDarkMode] = useState(false);
-
-  // const toggleDarkMode = () => {
-  //   setIsDarkMode(!isDarkMode);
-  // };
-
   return (
-    <Layout home>
-      {/* <div className={isDarkMode ? "dark-mode" : "light-mode"}>
-        <DarkModeToggle toggleDarkMode={toggleDarkMode} /> */}
+    <Layout className="bg-blue-500 " home>
       <Head>
         <title>{siteTitle}</title>
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
 
-      <section className="grid grid-cols-1">
-        <p className="text-rose-300 font-serif ... text-lg .. tracking-normal ... leading-relaxed ... text-center ... ">
-          The invisible barrier that comes at every turn for workers without a 
-          bachelor’s degree Millions of workers with in-demand skills and
-          experience, overlooked for higher-wage jobs because they don’t have a
-          bachelor’s degree. The invisible barrier
-          that comes at every turn for workers without a bachelor’s degree. This
-          all stops now, Unbound helps these workers figure out their true
-          passion and forces them to be limitless and pursue any job they want.
-          Tear the paper ceiling today!{" "}
+    
+      <div className="absolute items-center justify-center top-0 left-0 w-full h-full flex bg-black-100">
+        <img
+          className="absolute -top-20 -right-20"
+          src="/picture2.jpg"
+          width={500}
+          height={500}
+        />
+
+        <img
+          className="absolute -bottom-20 -left-20"
+          src="/picture.jpg"
+          height={400}
+          width={400}
+        />
+
+        <p className="text-center text-6xl  font-serif font-bold text-white tracking-wide ..  ">
+          UNBOUND
+          <p className="text-base text-base  font-serif font-bold text-lime-200	">
+            GO BEYOND DEGREES!
+          </p>
         </p>
 
-        <a href={"/newpage"}>
-          <button className="text-yellow-200 absolute inset-x-0 bottom-13 h-16 ... text-4xl">
-            Questionnaire
+        <a href={"/aboutpage"}>
+          <button className="text-green-200 fixed top-3 left-6 z-50 p-4 text-2xl font-MONO transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">        
+
+            ABOUT
           </button>
         </a>
-      </section>
+        <a href={"/newpage"}>
+          <button className="text-cyan-200  text-3xl font-MONO  absolute inset-x-0 bottom-20 h-16 ... transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">    
+            QUESTIONNAIRE
+          </button>
+        </a>
+
+      </div>
     </Layout>
   );
 }
+
+// {
+//    <p className="text-rose-300 font-serif ... text-lg .. tracking-normal ... leading-relaxed ... text-center ... ">
+//           The invisible barrier that comes at every turn for workers without a
+//           bachelor’s degree Millions of workers with in-demand skills and
+//           experience, overlooked for higher-wage jobs because they don’t have a
+//           bachelor’s degree. The invisible barrier
+//           that comes at every turn for workers without a bachelor’s degree. This
+//           all stops now, Unbound helps these workers figure out their true
+//           passion and forces them to be limitless and pursue any job they want.
+//           Tear the paper ceiling today!{" "}
+//         </p>
+// }

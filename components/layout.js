@@ -1,3 +1,4 @@
+// components/layout.js
 import Head from "next/head";
 import Image from "next/image";
 import styles from "./layout.module.css";
@@ -28,46 +29,40 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/unbound logo.jpg"
-              //className={utilStyles.borderCircle}
-              height={320}
-              width={800}
-              // alt={name}
-            />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-            <div className="fixed top-0 left-0 z-50 p-4">
+            {/* <Link href="/">
+              <div className="fixed top-0 left-0 z-50 p-4">
                 <Image
                   priority
                   src="/images/unbound logo.jpg"
-                  height={120}
-                  width={320}
+                  height={100}
+                  width={250}
                 />
               </div>
-            </Link>
-            {/* <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2> */}
+            </Link> */}
+
+            <div className="absolute items-center justify-center top-0 left-0 w-full h-full flex bg-black-100">
+              <img
+                className="absolute -top-10 -right-20"
+                src="/picture2.jpg"
+                width={300}
+                height={300}
+              />
+              <img
+                className="absolute -bottom-20 -left-20"
+                src="/picture.jpg"
+                height={300}
+                width={300}
+              />
+            </div>
           </>
         )}
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          {/* <Link href="/">
-            <button className="absolute inset-y-0 right-0 w-16 ...">
-               
-            </button>
-          </Link> */}
-        </div>
-      )}
+      {!home && <div className={styles.backToHome}></div>}
     </div>
   );
 }
