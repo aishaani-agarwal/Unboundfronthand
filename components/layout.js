@@ -51,7 +51,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && <div className={styles.backToHome}></div>}
 
-      <img
+      {/* <img
           className="absolute -top-20 -right-20"
           src="/picture2.jpg"
           width={500}
@@ -63,8 +63,21 @@ export default function Layout({ children, home }) {
           src="/picture.jpg"
           height={400}
           width={400}
+        /> */}
+
+<img
+          className="absolute -top-20 -right-20"
+          src="https://i.ibb.co/dgsnsMW/picture2.png"
+          width={500}
+          height={500}
         />
 
+        <img
+          className="absolute -bottom-20 -left-20"
+          src="https://i.ibb.co/gdvvHH4/picture.png"
+          height={400}
+          width={400}
+        />
         
 
     </div>

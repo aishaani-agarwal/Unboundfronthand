@@ -9,9 +9,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Image from "next/image";
 
-
 export default function Home() {
-  
   return (
     <Layout className="bg-blue-500 " home>
       <Head>
@@ -19,7 +17,6 @@ export default function Home() {
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
 
-      
       <div className="absolute items-center justify-center top-0 left-0 w-full h-full flex bg-black-100">
         <p className="text-center text-6xl  font-serif font-bold text-white tracking-wide ..  ">
           UNBOUND
@@ -38,6 +35,8 @@ export default function Home() {
             QUESTIONNAIRE
           </button>
         </a>
+
+       
       </div>
     </Layout>
   );
