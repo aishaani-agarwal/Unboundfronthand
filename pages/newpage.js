@@ -4,7 +4,6 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import TextBox from "../components/TextBox";
-// import React, { useState } from "react";
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -28,7 +27,7 @@ export default function NewPage() {
   const [Location, setlocation] = useState([]);
   const [data, setData] = useState([]);
 
-  const baseurl ="https://unbound-5xnh.onrender.com";
+  const baseurl = "https://unbound-5xnh.onrender.com";
 
   console.log(textBoxValues.Fname);
   useEffect(() => {
@@ -100,42 +99,42 @@ export default function NewPage() {
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
-        <h1 className="text-xl ...">First Name</h1>
+        <h1 className="text-xl ... text-white  ">First Name</h1>
         <TextBox
           type="text"
           value={textBoxValues.Fname}
           onChange={(e) => handleTextBoxChange(e, "Fname")}
         />
 
-        <h1 className="text-xl ...">Email</h1>
-        <TextBox
+        <h1 className="text-xl ... text-white ">Email</h1>
+        <TextBox 
           type="text"
           value={textBoxValues.Email}
           onChange={(e) => handleTextBoxChange(e, "Email")}
         />
 
-        <h1 className="text-xl ...">Age</h1>
+        <h1 className="text-xl ... text-white ">Age</h1>
         <TextBox
           type="number"
           value={textBoxValues.Age}
           onChange={(e) => handleTextBoxChange(e, "Age")}
         />
 
-        <h1 className="text-xl ...">Location</h1>
+        <h1 className="text-xl ... text-white  ">Location</h1>
         <TextBox
           type="text"
           value={textBoxValues.Location}
           onChange={(e) => handleTextBoxChange(e, "Location")}
         />
 
-        <h1 className="text-xl ...">Phone Number</h1>
+        <h1 className="text-xl ... text-white  ">Phone Number</h1>
         <TextBox
           type="number"
           value={textBoxValues.Phone}
           onChange={(e) => handleTextBoxChange(e, "Phone")}
         />
 
-        <h1>Highest level of education</h1>
+        <h1 className="text-xl ... text-white  ">Highest level of education</h1>
         <TextBox
           type="text"
           value={textBoxValues.HLE}
@@ -145,10 +144,9 @@ export default function NewPage() {
         <div>
           <a href={"/Question1"}>
             <button
-  className="text-lime-200 absolute inset-x-0 bottom-30 h-16 ... text-3xl ..."
+              className="text-lime-200 absolute inset-x-0 bottom-30 h-16 ... text-3xl ... transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
               disabled={!isFormValid()}
               onClick={async () => {
-                
                 setEmail(textBoxValues.Email);
                 console.log(textBoxValues.Fname);
                 setFname(textBoxValues.Fname);
@@ -165,7 +163,6 @@ export default function NewPage() {
                   console.log(textBoxValues.Phone);
                   console.log(textBoxValues.HLE);
                   console.log(textBoxValues.Location);
-
 
                   await axios.post(baseurl + "/api/example/add", {
                     // Fname:"Aishaani",
@@ -201,8 +198,30 @@ export default function NewPage() {
               Start Questionnaire
             </button>
           </a>{" "}
+
+          <img
+          className="absolute -top-20 -right-20"
+          src="/picture2.jpg"
+          width={500}
+          height={500}
+        />
+
+        <img
+          className="absolute -bottom-20 -left-20"
+          src="/picture.jpg"
+          height={400}
+          width={400}
+        />
+
+<a href={"/"}>
+          <button className="text-green-200 fixed top-3 left-6 z-50 p-4 text-2xl font-MONO transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">        
+
+            Home
+          </button>
+        </a>
         </div>
       </section>
+      
     </Layout>
   );
 }

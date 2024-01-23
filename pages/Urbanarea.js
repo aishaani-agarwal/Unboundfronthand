@@ -63,12 +63,12 @@ export default function Urbanarea() {
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
-        <h1 class="text-rose-300 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
+        <h1 class="text-cyan-200 font-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
           Which skill are you interested in?
         </h1>
         <Dropdown options={UrbanareaOptions} onChange={handleDropdownChange} />
         <button
-          className="text-lime-200 text-3xl ... inset-x-0 bottom-10 h-16 ..."
+          className="text-lime-200 text-3xl ... inset-x-0 bottom-10 h-16 ... transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
           onClick={handleSubmit}
         >
           NEXT
@@ -86,6 +86,14 @@ export default function Urbanarea() {
           </a>{" "}
         </div> */}
       </section>
+      <div>
+      <a href={"/"}>
+          <button className="text-green-200 fixed top-3 left-6 z-50 p-4 text-2xl font-MONO transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">        
+
+            Home
+          </button>
+        </a>
+        </div>
     </Layout>
   );
 }

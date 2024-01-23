@@ -8,5 +8,6 @@
     /* background-color: #6464d4; */
     /* (Background color) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    color: rgb(238, 99, 82); /* Text color */
-}
+    color: #99f6e4; /* Text color */
+    text-align: center;
+    }

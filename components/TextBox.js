@@ -27,9 +27,9 @@ const TextBox = ({type, value, onChange }) => {
   const textBoxStyle = {
     padding: '8px',
     fontSize: '15px',
-    border: `2px solid ${isHovered || isFocused ? '#EE6352' : '#27272a'}`,
+    border: `2px solid ${isHovered || isFocused ? '#d9f99d' : '#27272a'}`,
     borderRadius: '20px',
-    color: '#FAC05E',
+    color: '#86efac',
     outline: 'none',
     transition: 'border-color 0.3s ease', // Smooth transition for border color
 

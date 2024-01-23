@@ -44,25 +44,29 @@ export default function Layout({ children, home }) {
               </div>
             </Link> */}
 
-            <div className="absolute items-center justify-center top-0 left-0 w-full h-full flex bg-black-100">
-              <img
-                className="absolute -top-10 -right-20"
-                src="/picture2.jpg"
-                width={300}
-                height={300}
-              />
-              <img
-                className="absolute -bottom-20 -left-20"
-                src="/picture.jpg"
-                height={300}
-                width={300}
-              />
-            </div>
+            
           </>
         )}
       </header>
       <main>{children}</main>
       {!home && <div className={styles.backToHome}></div>}
+
+      <img
+          className="absolute -top-20 -right-20"
+          src="/picture2.jpg"
+          width={500}
+          height={500}
+        />
+
+        <img
+          className="absolute -bottom-20 -left-20"
+          src="/picture.jpg"
+          height={400}
+          width={400}
+        />
+
+        
+
     </div>
   );
 }

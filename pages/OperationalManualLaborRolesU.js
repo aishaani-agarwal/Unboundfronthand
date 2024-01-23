@@ -28,7 +28,7 @@ export default function OperationalManualLaborRolesU() {
           Resources & Reccomendations
         </h1>
         {/* 6 */}
-        <p className="text-rose-300"></p>
+        <p className="text-cyan-200"></p>
         <Box>
           <p>Event manual labor</p>
         </Box>
@@ -38,8 +38,18 @@ export default function OperationalManualLaborRolesU() {
         <Box>
           <p>Delivery Driver</p>
         </Box>
+      text-cyan-200
       </section>
+      <div>
+      <a href={"/"}>
+          <button className="text-green-200 fixed top-3 left-6 z-50 p-4 text-2xl font-MONO transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">        
+
+            Home
+          </button>
+        </a>
+        </div>
+
     </Layout>
   );
 }
-// }
+// 

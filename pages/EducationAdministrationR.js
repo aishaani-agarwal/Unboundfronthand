@@ -49,6 +49,7 @@ export default function EducationAdministrationR() {
         <title>{siteTitle}</title>
         <script src="https://cdn.tailwindcss.com"></script>
       </Head>
+      <div>
       <section className="grid grid-cols-1">
         <h1 className="text-lime-200 text-5xl ... font-serif ...absolute bottom-3 right-5 w-auto ... ">
           Question 4
@@ -57,7 +58,7 @@ export default function EducationAdministrationR() {
           Rules: * questions are mandantory and the rest are optional
         </p> */}
 
-        <h1 class="text-rose-300ont-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
+        <h1 class="text-cyan-200ont-serif text-2xl absolute left-60  transform -translate-x-1/4 relative h-20 absolute inset-20 ... ">
           Which from these do you prefer?
         </h1>
         <Dropdown
@@ -65,7 +66,7 @@ export default function EducationAdministrationR() {
           onChange={handleDropdownChange}
         />
         <button
-          className="text-lime-200 text-3xl ... inset-x-0 font-serif bottom-10 h-16 ..."
+          className="text-lime-200 text-3xl ... inset-x-0 font-serif bottom-10 h-16 ...transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
           onClick={handleSubmit}
         >
           NEXT
@@ -83,6 +84,13 @@ export default function EducationAdministrationR() {
           </a>{" "}
         </div> */}
       </section>
+      <a href={"/"}>
+          <button className="text-green-200 fixed top-3 left-6 z-50 p-4 text-2xl font-MONO transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ... ">        
+
+            Home
+          </button>
+        </a>
+        </div>
     </Layout>
   );
 }
