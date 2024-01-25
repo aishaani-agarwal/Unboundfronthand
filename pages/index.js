@@ -1,13 +1,12 @@
 // pages/index.js
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import DarkModeToggle from "../components/DarkModeToggle";
-import { useState } from "react";
-import { useEffect } from "react";
-import Image from "next/image";
+// import utilStyles from "../styles/utils.module.css";
+// import Link from "next/link";
+// import { useRouter } from "next/router";
+// import { useState } from "react";
+// import { useEffect } from "react";
+// import Image from "next/image";
 
 export default function Home() {
   return (
