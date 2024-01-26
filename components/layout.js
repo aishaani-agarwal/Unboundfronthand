@@ -11,6 +11,7 @@ export const siteTitle = "Unbound - Limitless careers";
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <div className="bg-black-100">
       <Head>
         <link rel="icon" href="/favicon7.ico" />
         <meta
@@ -80,6 +81,7 @@ export default function Layout({ children, home }) {
         />
         
 
+    </div>
     </div>
   );
 }

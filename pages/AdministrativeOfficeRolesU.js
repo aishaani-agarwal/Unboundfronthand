@@ -31,6 +31,7 @@ export default function AdministrativeOfficeRolesU() {
         {/* 6 */}
         <p className="text-cyan-200"></p>
         <Box>
+          
           <p>Microfinance Officer</p>
         </Box>
         <Box>
