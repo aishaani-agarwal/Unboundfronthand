@@ -8,6 +8,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Image from "next/image";
 
+
+
 export default function Home() {
   return (
     <Layout className="bg-blue-500 " home>
