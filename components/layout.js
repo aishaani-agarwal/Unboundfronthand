@@ -65,7 +65,7 @@ export default function Layout({ children, home }) {
           width={400}
         /> */}
 
-{/* <img
+<img
           className="absolute -top-20 -right-20"
           src="https://i.ibb.co/dgsnsMW/picture2.png"
           width={500}
@@ -77,7 +77,7 @@ export default function Layout({ children, home }) {
           src="https://i.ibb.co/gdvvHH4/picture.png"
           height={400}
           width={400}
-        /> */}
+        />
         
 
     </div>

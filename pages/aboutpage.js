@@ -3,7 +3,6 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import DarkModeToggle from "../components/DarkModeToggle";
 import { useState } from "react";
 import { useEffect } from "react";
 import Image from "next/image";
